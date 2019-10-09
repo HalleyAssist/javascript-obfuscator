@@ -39,7 +39,7 @@ export class JavaScriptObfuscator implements IJavaScriptObfuscator {
     };
 
     /**
-     * @type {GenerateOptions}
+     * @type {escodegen.GenerateOptions}
      */
     private static readonly escodegenParams: escodegen.GenerateOptions = {
         comment: true,
@@ -193,7 +193,7 @@ export class JavaScriptObfuscator implements IJavaScriptObfuscator {
      * @returns {IGeneratorOutput}
      */
     private generateCode (sourceCode: string, astTree: ESTree.Program): IGeneratorOutput {
-        const escodegenParams: escodegen.GenerateOptions = {
+        const escodegenParams: any = {
             ...JavaScriptObfuscator.escodegenParams
         };
 
