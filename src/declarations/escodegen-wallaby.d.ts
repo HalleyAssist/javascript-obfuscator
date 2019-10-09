@@ -1,3 +1,3 @@
-declare module 'escodegen-wallaby' {
+declare module 'escodegen' {
     export * from 'escodegen';
 }
